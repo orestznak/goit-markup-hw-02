@@ -26,10 +26,14 @@ footer
 */
 
 :root {
+  --logo-black-color: #000000;
   --primary-text-color: #757575;
+  --background-section-color: #f5f4fa;
   --title-text-color: #212121;
   --accent-color: #2196f3;
   --primary-white-color: #ffffff;
+  --footer-background-color: #2f303a;
+  --footer-adress-color: rgba(255, 255, 255, 0.6);
 }
 body {
   color: var(--primary-text-color);
@@ -40,7 +44,7 @@ body {
 
 /*логотип сайта*/
 .logo {
-  color: #000000;
+  color: var(--logo-black-color);
 
   font-family: Raleway, sans-serif;
   font-weight: 700;
@@ -152,6 +156,9 @@ body {
 }
 
 /*--Наша команда (фото)*/
+.team {
+  background-color: var(--background-section-color);
+}
 .team .team-member {
   color: var(--title-text-color);
 
@@ -173,7 +180,11 @@ body {
 
 /*footer*/
 footer {
-  background-color: #2f303a;
+  background-color: var(--footer-background-color);
+}
+
+footer .studio {
+  color: var(--primary-white-color);
 }
 footer .footer-adress {
   color: var(--primary-white-color);
@@ -188,7 +199,7 @@ footer .footer-adress {
 
 footer .mail,
 footer .phone-number {
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--footer-adress-color);
 
   font-size: 14px;
   font-style: normal;
@@ -198,8 +209,11 @@ footer .phone-number {
   text-decoration: none;
 }
 
+/*сторінка Портфоліо*/
+
 .portfolio .filter {
   color: var(--title-text-color);
+  background-color: var(--background-section-color);
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -219,6 +233,10 @@ footer .phone-number {
   font-family: inherit;
 }
 
+.portfolio-link {
+  text-decoration: none;
+}
+
 .portfolio .category {
   color: var(--title-text-color);
 
@@ -227,9 +245,12 @@ footer .phone-number {
   line-height: 2;
 
   letter-spacing: 0.06em;
+  text-decoration: none;
 }
 
 .portfolio .category-text {
+  color: var(--primary-text-color);
+
   font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
